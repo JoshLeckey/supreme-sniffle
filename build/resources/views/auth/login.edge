@@ -1,0 +1,35 @@
+@section('head')
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" integrity="sha512-6Z0q1qj6q0ZuqZ6yfzj2o4X4KX5rVHJNj7V9k2mZp4YQK5uU4nXnqZdW3IbZ6qZc5kL2hJ8gW3ZgqZc5kL2hJ8g==" crossorigin="anonymous" />
+@endsection
+@section ('body')
+<div class="min-h-screen py-6 bg-slate-800 flex flex-col jusify-center sm:py-12">
+  <div class="relative py-3 sm:max-w-xl sm:mx-auto">
+    <div class="relative px-4 py-10 bg-slate-500">
+      <div class="max-w-md mx-auto">
+        <div>
+          <h1 class="text-2xl font-semibold text-red-600">Login to the service</h1>
+          <p class="mt-2 text-sm text-slate-200">
+            Enter your credentials to continue
+          </p>
+        </div>
+        <div class="divide-y divide-gray-400"
+          <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+            <div class="flex flex-col">
+              <label class="leading-loose">Email</label>
+              <input type="email" placeholder="Email" class="px-4 py-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-transparent" />
+            </div>
+            <div class="flex flex-col">
+              <label class="leading-loose">Password</label>
+              <input type="password" placeholder="Password" class="px-4 py-2 border border-gray-300 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-slate-600 focus:border-transparent" />
+            </div>
+          </div>
+          <div class="pt-4 flex items-center space-x-4">
+            <button class="flex justify-center items-center w-full text-gray-900 px-4 py-3 rounded-md focus:outline-none bg-slate-200 hover:bg-slate-300">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection
+
